@@ -9,7 +9,6 @@
 
 #include "editor/osm_auth.hpp"
 #include "editor/server_api.hpp"
-#include "editor/user_stats.hpp"
 
 namespace
 {
