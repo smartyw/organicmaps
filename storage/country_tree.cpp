@@ -450,7 +450,7 @@ int64_t LoadCountriesFromFile(string const & path, CountryTree & countries,
                               MwmTopCountryGeoIds & mwmTopCountryGeoIds)
 {
   string json;
-  ReaderPtr<Reader>(GetPlatform().GetReader(path)).ReadAsString(json);
+  ReaderPtr<Reader>(GetPlatform().GetReader(path, "fwr")).ReadAsString(json);
   return LoadCountriesFromBuffer(json, countries, affiliations, countryNameSynonyms,
                                  mwmTopCityGeoIds, mwmTopCountryGeoIds);
 }
